@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabank</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg sticky-top parabank">
+        <div class="container-xxl py-2">
+            <!-- left: logo -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="./assets/img/parabank-logo.png" alt="parabank-logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <!-- center: nav links -->
+                <ul class="navbar-nav mx-lg-auto my-3 my-lg-0 text-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Benefícios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Parcerias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Porque</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Funcionamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                </ul>
+
+                <!-- right: actions (desktop) -->
+                <div class="d-none header-btn d-lg-flex align-items-center gap-2">
+                    <a href="#" class="btn btn-outline-light-soft btn-pill">
+                        JÁ TEM SUA CONTA? <span class="d-none d-xl-inline">ACESSE O INTERNET BANKING</span>
+                    </a>
+                    <a href="#" class="btn btn-white btn-pill">BAIXE O APP E ABRA SUA CONTA</a>
+                </div>
+
+                <!-- actions inside menu (mobile) -->
+                <div class="d-lg-none border-top pt-3 mt-3">
+                    <a href="#" class="btn btn-outline-light-soft btn-pill text-white w-100 mb-2">
+                        JÁ TEM SUA CONTA? ACESSE O INTERNET BANKING
+                    </a>
+                    <a href="#" class="btn btn-white btn-pill text-white w-100">BAIXE O APP E ABRA SUA CONTA</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MARGIN UP SECTION -->
+    <div class="margin-up-section d-none d-md-block"></div>
+
+    <!-- VIDEO HERO (TOP) -->
+    <section id="videoHero" aria-label="Awards video hero">
+        <div class="container-fluid position-relative h-100 p-0">
+            <button type="button" class="btn z-3 btn-light rounded-pill close-video" id="closeVideo">← Voltar</button>
+            <div class="video-frame-wrap">
+                <div class="video-frame">
+                    <!-- Replace with your iframe or video -->
+                    <iframe class="h-100 w-100" src="https://www.youtube.com/embed/se1RDOPvA8Q?si=ByU6mQeJfETKYX3h"
+                        title="Running video" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PURPLE HERO -->
+    <section id="purpleHero" class="pt-5">
+        <div class="hero-inner container">
+            <div class="row">
+                <div class="col-md-5 col-12 order-1 text-center text-md-start">
+                    <div class="hero-kicker">
+                        <h6>O primeiro banco digital do mundo</h6>
+                    </div>
+                    <h1 class="hero-title">COM, POR E<br />PARA PCDs.</h1>
+                </div>
+                <div class="col-md-2 col-12 position-relative order-md-2 order-3">
+                    <img src="./assets/img/foto-banner.png" alt="foto-banner" class="img-fluid foto-banner-img">
+                </div>
+                <div class="col-md-5 col-12 order-md-3 order-2 text-center text-md-start">
+                    <h6>100% digital, gratuito e com serviços financeiros pensados para você.</h6>
+                    <a href="https://e3l1.short.gy/parabank" target="_blank" rel="nofollow"
+                        class="btn btn-light rounded-pill fw-semibold mt-2 text-uppercase px-5">Abrir conta <br><i
+                            class="heading-color-primary fst-normal">gratuita</i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Video teaser (bottom-left) -->
+        <div class="video-teaser rounded-5" id="videoTeaser" role="button" aria-label="Assistir vídeo">
+            <img class="teaser-thumb" src="./assets/img/thumb.png" alt="Awards teaser">
+            <div class="teaser-overlay p-3 p-md-4 text-center">
+                <div class="play-btn mb-2"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- COMO FUNCIONA -->
+    <div class="como-sec my-5">
+        <div class="container">
+            <h2 class="heading-color-secondary fw-extrabold text-center">COMO FUNCIONA</h2>
+            <div class="innerboxes mt-5 pt-lg-5 pt-0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 innerbox px-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 col-2">
+                                <div class="number fw-extrabold position-sticky z-2">
+                                    1
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-10 content-box rounded-5 shadow p-5 pe-4">
+                                <div class="content pt-4 ps-lg-5 ps-md-2 ps-2">
+                                    <p>Baixe o app disponível na</p>
+                                    <a href="https://apps.apple.com/br/app/parabank-conta-digital/id6503087431"
+                                        target="_blank" rel="nofollow"><img src="./assets/img/apple-store-logo.png"
+                                            class="img-fluid my-3" alt="apple-store-logo"></a>
+                                    <a href="https://e3l1.short.gy/parabank" target="_blank" rel="nofollow"><img
+                                            src="./assets/img/play-store-logo.png" class="img-fluid"
+                                            alt="play-store-logo"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 innerbox px-4 my-4 my-md-0">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 col-2">
+                                <div class="number fw-extrabold position-sticky z-2">
+                                    2
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-10 content-box rounded-5 shadow p-5 pe-4">
+                                <div class="content py-4 ps-lg-5 ps-md-2 ps-2">
+                                    Abra sua conta minutos. <b>Documentos básicos e um processo simples e adaptado.</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 innerbox px-4 my-0 my-lg-0 my-md-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 col-2">
+                                <div class="number fw-extrabold position-sticky z-2">
+                                    3
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-10 content-box rounded-5 shadow p-5 pe-4">
+                                <div class="content py-4 ps-lg-5 ps-md-2 ps-2">
+                                    Comece a usar cartão, crédito, maquininhas e mais. <b>Tudo acessível, tudo no seu
+                                        tempo.</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BENEFÍCIOS PARABANK -->
+    <div class="beneficios py-5">
+        <div class="container my-5">
+            <h2 class="heading-color-secondary fw-extrabold text-center">BENEFÍCIOS PARABANK</h2>
+        </div>
+    </div>
+
+
+    <!-- FSW SECTION -->
+    <div id="fsw-section" class="py-lg-5 py-0 bg-white">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-md-4 order-md-1 mt-0 text-md-start text-center">
+                    <h2 class="heading-color-primary text-center text-md-end fsw-left">
+                        CONTA DIGITAL <b>GRATUITA</b>
+                    </h2>
+                </div>
+
+                <div class="col-md-4 order-md-2 mt-0 text-center position-relative">
+                    <img class="fsw-img img-fluid" src="./assets/img/slide1.png" alt="app preview">
+                </div>
+
+                <div class="col-md-4 order-md-3 mt-0 text-md-start text-center">
+                    <p class="fsw-right-title d-none">Serviços personalizados</p>
+                    <p class="fsw-right-text">Serviços personalizados <b>pensados para suas necessidades.</b></p>
+                </div>
+            </div>
+
+            <!-- Buttons row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+                        <!-- BTN 1 (active) -->
+                        <button class="btn btn-outline-dark fsw-btn active" data-img="/assets/img/slide1.png"
+                            data-left="CONTA DIGITAL <b>GRATUITA</b>" data-right-title="Serviços personalizados"
+                            data-right-text="Serviços personalizados <b>pensados para suas necessidades.</b>">
+                            Conta Digital
+                        </button>
+
+                        <!-- BTN 2 -->
+                        <button class="btn btn-outline-dark fsw-btn" data-img="/assets/img/slide2.svg"
+                            data-left="Cartões de débito e <b>crédito</b>" data-right-title="Investimentos simples"
+                            data-right-text="Serviços personalizados <b>pensados para suas necessidades.</b>">
+                            Cartões de débito e crédito
+                        </button>
+
+                        <!-- BTN 3 -->
+                        <button class="btn btn-outline-dark fsw-btn" data-img="/assets/img/slide1.png"
+                            data-left="Maquininha de <b>cartão</b>" data-right-title="Cartão completo"
+                            data-right-text="Serviços personalizados <b>pensados para suas necessidades.</b>">
+                            Maquininha de cartão
+                        </button>
+
+                        <!-- BTN 4 -->
+                        <button class="btn btn-outline-dark fsw-btn" data-img="/assets/img/slide2.svg"
+                            data-left="Atendimento <b>humanizado</b>" data-right-title="Cartão completo"
+                            data-right-text="Serviços personalizados <b>pensados para suas necessidades.</b>">
+                            Atendimento humanizado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- COMPROMISSO -->
+    <div class="compromisso my-5 py-5 round-cut-circle position-relative">
+        <div class="container py-lg-5 py-md-3 py-0">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 text-center text-md-start contentcol">
+                    <h4 class="text-white fw-normal">Compromisso com</h4>
+                    <h2 class="w-75 mx-auto mx-md-0 text-white fw-bold">inclusão, inovação e impacto social.</h2>
+                    <p class="w-75 mt-lg-5 mt-md-3 mt-3 mx-auto mx-md-0 text-white">Cada parceiro reforça nossa missão:
+                        transformar o sistema financeiro em um ambiente mais acessível e representativo.</p>
+                </div>
+                <div class="col-md-6 col-12 mt-md-0 mt-5 text-center text-md-end logocol">
+                    <img id="brandImage" src="./assets/img/Logo VISA.png" alt="logo" class="img-fluid">
+                    <p id="brandText" class="w-75 my-5 ms-md-auto me-md-0 mx-auto text-white">
+                        Soluções de pagamento e inclusão financeira com tecnologia de ponta.
+                    </p>
+                    <ul
+                        class="mt-lg-5 mt-md-3 pt-md-5 pt-0 list-unstyled d-flex justify-content-md-end justify-content-center gap-3 gap-md-5">
+                        <li>
+                            <button class="btn btn-outline-light brand-btn active" data-img="/assets/img/Logo VISA.png"
+                                data-text="Soluções de pagamento e inclusão financeira com tecnologia de ponta.">
+                                VISA
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-light brand-btn" data-img="/assets/img/teleton.svg"
+                                data-text="Participação ativa em iniciativas que transformam vidas.">
+                                TELETON
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-light brand-btn" data-img="/assets/img/Logo VISA.png"
+                                data-text="Ottobock fornece soluções de mobilidade com inovação e qualidade.">
+                                OTTOBOCK
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- POR QUE -->
+    <div class="pro-que py-5 my-lg-5 my-0">
+        <div class="container mb-lg-5">
+            <h2 class="heading-color-secondary fw-extrabold text-center">POR QUE O PARABANK?</h2>
+            <p class="heading-color-secondary text-center my-2">Porque todos os dias, criamos produtos e serviços para
+                reabilitar a vida de pessoas</p>
+        </div>
+
+        <div class="container py-lg-5 py-3">
+            <div class="row pt-lg-5 pt-0">
+                <div class="col-lg-5 col-12 order-lg-1 order-2">
+                    <div
+                        class="iconbox d-flex flex-column-reverse flex-lg-row align-items-center justify-content-end pb-5 pe-lg-4 pe-0">
+                        <p class="m-0 me-lg-3 mt-lg-0 mt-3 text-center text-lg-start">Melhorar a acessibilidade aos
+                            serviços financeiros.</p>
+                        <img src="./assets/img/pro-icon-1.svg" alt="pro-icon-1" class="img-fluid">
+                    </div>
+
+                    <div
+                        class="iconbox d-flex flex-column-reverse flex-lg-row align-items-center justify-content-end pt-lg-5 pt-3 me-lg-5 me-0 pe-lg-5 pe-0">
+                        <p class="m-0 me-3 mt-lg-0 mt-3 text-center text-lg-start">Reabilitar vidas através da educação
+                            financeira.
+                        </p>
+                        <img src="./assets/img/pro-icon-2.svg" alt="pro-icon-2" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-12 foto-mulher-girl-col position-relative order-lg-2 order-1">
+                    <img src="./assets/img/foto-mulher.png" class="foto-mulher-girl" alt="foto-mulher">
+                </div>
+
+                <div class="col-lg-5 col-12 order-3">
+                    <div
+                        class="iconbox d-flex flex-column flex-lg-row align-items-center justify-content-end pb-lg-5 pb-3 ps-lg-4 ps-0 mt-lg-5 pt-3">
+                        <img src="./assets/img/pro-icon-3.svg" alt="pro-icon-3" class="img-fluid">
+                        <p class="m-0 ms-lg-3 mt-3 mt-lg-0 text-center text-lg-start">Melhorar a experiência de pessoas
+                            PCD ao
+                            utilizar
+                            serviços financeiros.</p>
+                    </div>
+
+                    <div
+                        class="iconbox d-flex flex-column flex-lg-row align-items-center justify-content-end pt-lg-5 pt-3 ms-lg-5 ps-lg-5">
+                        <img src="./assets/img/pro-icon-4.svg" alt="pro-icon-4" class="img-fluid">
+                        <p class="m-0 ms-lg-3 mt-3 mt-lg-0 text-center text-lg-start">Atendimento personalizado e app
+                            pensado em você.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- COMUNIDADE -->
+    <div class="comunidade py-5 round-cut-circle position-relative">
+        <div class="container my-lg-5 my-md-3 my-0 py-5">
+            <div class="row mt-5 pt-5">
+                <h2 class="text-white fw-extrabold text-center">UMA COMUNIDADE EM CRESCIMENTO</h2>
+                <div class="counterrow d-md-flex justify-content-evenly mt-lg-5 mt-md-3 mt-0 pt-5">
+
+                    <div class="counterbox">
+                        <h3 class="counter text-center fw-extrabold text-white" data-target="75.000" data-prefix="+">
+                            0.000</h3>
+                        <p class="text-white text-center">
+                            Contas abertas
+                        </p>
+                    </div>
+                    <div class="counterbox mt-5 mt-md-0">
+                        <h3 class="counter text-center fw-extrabold text-white" data-target="92" data-suffix="%">0</h3>
+                        <p class="text-white text-center">
+                            Satisfação no <br>atendimento
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- <div class="counter" data-target="75" data-suffix="%">0</div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FREQUENTES -->
+    <div class="frequentes py-lg-5 py-0 my-5">
+        <div class="container py-lg-5 py-0">
+            <div class="row py-5 my-lg-5 my-0">
+                <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                    <h2 class="heading-color-secondary fw-extrabold text-center text-lg-start mx-auto mb-4 mb-lg-0">
+                        PERGUNTAS FREQUENTES</h2>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row contentbox align-items-md-center align-items-start mb-4">
+                        <div class="col-md-2 col-1 numberbox">
+                            <h3 class="fw-extrabold text-dark text-end me-3">01</h3>
+                        </div>
+                        <div class="col-md-10 col-11 textbox">
+                            <h6 class="fw-bold text-dark">Qualquer pessoa pode abrir uma conta no Parabank?</h6>
+                            <p>Sim! O Parabank nasceu com foco nas pessoas com deficiência, mas acreditamos que um banco
+                                verdadeiramente inclusivo é aquele que acolhe todos. <i>Aqui, todo mundo é
+                                    bem-vindo.</i></p>
+                        </div>
+                    </div>
+
+                    <div class="row contentbox align-items-md-center align-items-start mb-4">
+                        <div class="col-md-2 col-1 numberbox">
+                            <h3 class="fw-extrabold text-dark text-end me-3">02</h3>
+                        </div>
+                        <div class="col-md-10 col-11 textbox">
+                            <h6 class="fw-bold text-dark">Tem alguma taxa?</h6>
+                            <p>Não cobramos taxa de abertura ou manutenção.</p>
+                        </div>
+                    </div>
+
+                    <div class="row contentbox align-items-md-center align-items-start mb-4">
+                        <div class="col-md-2 col-1 numberbox">
+                            <h3 class="fw-extrabold text-dark text-end me-3">03</h3>
+                        </div>
+                        <div class="col-md-10 col-11 textbox">
+                            <h6 class="fw-bold text-dark">Como funciona o crédito exclusivo?</h6>
+                            <p>Analisamos seu perfil com foco em reabilitação, educação, mobilidade ou empreendedorismo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer round-cut-circle position-relative">
+        <div class="container main-footer py-5 my-lg-5">
+            <div class="row pt-lg-5 mt-5">
+                <div class="col-lg-5 col-12">
+                    <a href="/"><img src="./assets/img/parabank-logo.png" alt="parabank-logo" class="img-fluid"></a>
+                    <h6 class="text-white fw-bold my-5">Parabank é mais do que uma fintech.</h6>
+                    <p class="text-white me-lg-5 m-0">
+                        Temos nossa própria SCD – Sociedade de Crédito Direto – autorizada e regulamentada pelo Banco
+                        Central. Isso significa que operamos como uma instituição financeira oficial, com regras claras,
+                        transparência e base sólida. Abrir sua conta aqui é ter a segurança de estar em um banco digital
+                        com propósito verdadeiro e compromisso com você.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 my-5 my-lg-0 d-flex flex-column">
+                    <div class="col">
+                        <h6 class="text-dark fw-bold">Acompanhe o Parabank</h6>
+                        <ul class="d-flex gap-3 list-unstyled mt-3 social-icons">
+                            <li><a href="https://www.linkedin.com/company/mundoparabank" target="_blank"
+                                    rel="nofollow"><img src="./assets/img/linkedin.svg" class="img-fluid"
+                                        alt="linkedin"></a></li>
+                            <li><a href="https://www.facebook.com/parabankoficial" target="_blank" rel="nofollow"><img
+                                        src="./assets/img/instagram.svg" class="img-fluid" alt="instagram"></a></li>
+                            <li><a href="https://www.instagram.com/parabank_oficial" target="_blank" rel="nofollow"><img
+                                        src="./assets/img/facebook.svg" class="img-fluid" alt="facebook"></a></li>
+                            <li><a href="https://www.youtube.com/@Parabankoficial" target="_blank" rel="nofollow"><img
+                                        src="./assets/img/youtube.svg" class="img-fluid" alt="youtube"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h6 class="text-dark fw-bold">Fale com a gente</h6>
+                        <p class="text-white">R. José Versolato, 101 - Centro São Bernardo do Campo CEP 09750-730</p>
+                        <p class="m-0"><a href="mailto:atendimento@parabank.com.br"
+                                class="text-white fw-bold text-decoration-none">atendimento@parabank.com.br</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 d-flex flex-column">
+                    <div class="col">
+                        <h6 class="text-dark fw-bold">Links importantes</h6>
+                        <p class="text-white">Sobre o Parabank Políticas de Privacidade Acessibilidade</p>
+                    </div>
+
+                    <div class="col">
+                        <h6 class="text-dark fw-bold">Baixe o nosso APP</h6>
+                        <a href="https://apps.apple.com/br/app/parabank-conta-digital/id6503087431" target="_blank"
+                            rel="nofollow"><img src="./assets/img/apple-store-logo.png" class="img-fluid my-3"
+                                alt="apple-store-logo"></a>
+                        <a href="https://e3l1.short.gy/parabank" target="_blank" rel="nofollow"><img
+                                src="./assets/img/play-store-logo.png" class="img-fluid" alt="play-store-logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright py-lg-5 py-3">
+            <p class="text-white text-center m-0">Todos os direitos reservados <a href="/"
+                    class="text-decoration-none text-white">Parabank</a> ©
+                2025</p>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

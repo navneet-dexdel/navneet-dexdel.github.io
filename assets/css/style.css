@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    overflow-x: hidden !important;
+    font-family: 'Montserrat' !important;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1366px !important;
+}
+
+:root {
+    --color-primary: #816ADC;
+    --color-secondary: #7E6FB1;
+    --color-text: #000000;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --brand: #7c5ce6;
+    --hero-min: 78vh;
+    --video-hero: 86vh;
+}
+
+.fw-extrabold {
+    font-weight: 800 !important;
+}
+
+.heading-color-primary {
+    color: var(--color-primary);
+}
+
+.heading-color-secondary {
+    color: var(--color-secondary);
+}
+
+h2 {
+    font-size: 60px !important;
+}
+
+h3 {
+    font-size: 54px !important;
+}
+
+h4 {
+    font-size: 36px !important;
+}
+
+h6 {
+    font-size: 24px !important;
+}
+
+.round-cut-circle::before {
+    content: '' !important;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+.round-cut-circle {
+    overflow: hidden;
+}
+
+/* COMO FUNCIONA */
+.como-sec .innerbox .number {
+    color: var(--color-primary);
+    font-size: 300px;
+    line-height: 0;
+    transition: 200ms ease;
+}
+
+.como-sec .innerbox .row:hover .number {
+    color: var(--color-black)
+}
+
+.como-sec .innerboxes .innerbox .content-box .content {
+    font-size: 20px;
+}
+
+.como-sec .innerbox .row .content-box,
+.como-sec .innerbox .row .content-box .content {
+    transition: 200ms ease;
+}
+
+.como-sec .innerbox .row:hover .content-box {
+    background-color: var(--color-primary);
+}
+
+.como-sec .innerbox .row:hover .content-box .content {
+    color: #fff;
+}
+
+/* FSW SECTION */
+#fsw-section .fsw-right-text {
+    font-size: 20px;
+}
+
+/* COMPROMISSO */
+.compromisso {
+    background-image: url('../../assets/img/compromisso-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.compromisso .logocol p,
+.compromisso .contentcol p {
+    font-size: 24px;
+}
+
+.compromisso .logocol li {
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    transition: 200ms ease;
+}
+
+.compromisso .logocol li:hover {
+    font-weight: 700;
+}
+
+.compromisso::before {
+    bottom: -200px;
+    left: 20%;
+}
+
+/* COMUNIDADE */
+.comunidade {
+    background-image: url('../../assets/img/comunidade-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comunidade .counterrow .counterbox p {
+    font-size: 24px;
+}
+
+.comunidade .counterrow .counterbox .counter {
+    font-size: 54px;
+}
+
+.comunidade::before {
+    bottom: -200px;
+    right: 15%;
+}
+
+/* FREQUENTES */
+.frequentes .contentbox .textbox p {
+    font-size: 24px;
+}
+
+.frequentes .contentbox .textbox p i {
+    display: block;
+    color: var(--color-primary);
+    font-style: normal;
+}
+
+.frequentes .contentbox h3,
+.frequentes .textbox h6 {
+    transition: 200ms ease;
+}
+
+.frequentes .contentbox:hover h3,
+.frequentes .textbox:hover h6 {
+    color: var(--color-primary) !important;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color-primary);
+}
+
+.footer::before {
+    top: -200px;
+    left: 20%;
+}
+
+.footer .copyright p {
+    font-size: 18px;
+}
+
+.footer .copyright p a:hover {
+    color: var(--color-black) !important;
+}
+
+.footer .main-footer p,
+.pro-que p {
+    font-size: 24px;
+}
+
+.footer .social-icons img {
+    transition: 200ms ease;
+}
+
+.footer .social-icons img:hover {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(14%) hue-rotate(234deg) brightness(96%) contrast(104%);
+}
+
+/* PRO QUE */
+.pro-que .foto-mulher-girl {
+    position: absolute;
+    left: -420px;
+    bottom: -350px;
+    z-index: 5;
+    margin: auto;
+}
+
+
+
+/* ---------- NAVBAR ---------- */
+/* .navbar.parabank {
+    
+} */
+
+.navbar.parabank.scrolled {
+    background: rgba(255, 255, 255, .7);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    backdrop-filter: saturate(140%) blur(8px);
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+}
+
+/* ---------- VIDEO HERO (keeps at the TOP) ---------- */
+#videoHero {
+    height: 0;
+    /* hidden initially */
+    overflow: hidden;
+    transition: height .5s ease;
+    background: #0f0f12;
+}
+
+#videoHero .container-xxl {
+    height: 100%;
+}
+
+.video-frame-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding-block: min(3vh, 24px);
+}
+
+.video-frame {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .45);
+    background: #000;
+}
+
+.video-frame video,
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+.close-video {
+    position: absolute;
+    right: clamp(12px, 3vw, 24px);
+    top: clamp(12px, 3vw, 24px);
+    z-index: 5;
+}
+
+body.show-video #videoHero {
+    height: var(--video-hero);
+}
+
+/* ---------- PURPLE HERO ---------- */
+#purpleHero {
+    position: relative;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    background: var(--brand);
+    color: #fff;
+    /* overflow: hidden; */
+    margin-bottom: 250px;
+}
+
+.foto-banner-img {
+    position: absolute;
+    bottom: -450px;
+    left: -350px;
+    min-width: 700px !important;
+}
+
+.hero-kicker {
+    opacity: .9;
+    font-size: .95rem;
+    margin-bottom: .2rem
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4.4vw, 3.2rem);
+    line-height: 1.05;
+    font-weight: 800;
+    margin: .2rem 0 1rem
+}
+
+.hero-sub {
+    max-width: 44ch;
+    opacity: .95
+}
+
+.person-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.person {
+    width: min(480px, 90%);
+    max-width: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0 40px 60px rgba(0, 0, 0, .35));
+}
+
+/* ---------- VIDEO TEASER (inside purple hero, bottom-left) ---------- */
+.video-teaser {
+    position: absolute;
+    left: max(24px, 4vw);
+    /* bottom: max(24px, 3.5vw); */
+    bottom: -170px;
+    width: min(420px, 80vw);
+    border-radius: var(--radius);
+    background: #111;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.teaser-thumb {
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    opacity: .9;
+}
+
+.teaser-overlay {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, .6));
+}
+
+.play-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #fff;
+    color: #000;
+    margin-bottom: .35rem;
+}
+
+.play-btn:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 16px solid #000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 4px;
+}
+
+body.show-video #purpleHero .video-teaser {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+}
+
+#closeVideo {
+    top: 150px;
+}
+
+.margin-up-section {
+    margin-top: -130px;
+}
+
+.navbar.parabank {
+    --nav-color: #fff;
+    /* link/brand color on top of hero */
+    background: transparent;
+    transition: background .25s ease, box-shadow .25s ease, color .25s ease;
+    z-index: 1080;
+    /* above hero */
+}
+
+.navbar.parabank .navbar-brand,
+.navbar.parabank .nav-link {
+    color: var(--nav-color) !important;
+    font-weight: 500;
+    opacity: .95;
+}
+
+.navbar.parabank .nav-link:hover {
+    opacity: 1;
+}
+
+/* pill buttons */
+.btn-pill {
+    border-radius: 999px;
+    padding: .6rem 1rem;
+    font-weight: 700;
+}
+
+.btn-outline-light-soft {
+    color: var(--nav-color);
+    border: 1.5px solid rgba(255, 255, 255, .7);
+    background: transparent;
+}
+
+.btn-outline-light-soft:hover {
+    background: rgba(255, 255, 255, .12);
+}
+
+.btn-white {
+    background: #fff;
+    color: #111;
+}
+
+.btn-white:hover {
+    background: #f6f6f6;
+}
+
+/* toggler color */
+.navbar.parabank .navbar-toggler {
+    border: 0;
+}
+
+.navbar.parabank .navbar-toggler-icon {
+    filter: invert(1);
+    opacity: .9;
+}
+
+/* white icon */
+
+/* on scroll */
+.navbar.parabank.scrolled {
+    --nav-color: #fff;
+    background: rgba(129, 106, 220, 0.51);
+    backdrop-filter: saturate(140%) blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+}
+
+.navbar.parabank.scrolled .btn-outline-light-soft {
+    color: #1c1f24;
+    border-color: rgba(0, 0, 0, .25);
+}
+
+.navbar.parabank.scrolled .btn-outline-light-soft:hover {
+    background: rgba(0, 0, 0, .06);
+}
+
+.navbar.parabank.scrolled .navbar-toggler-icon {
+    filter: invert(0);
+}
+
+/* dark icon */
+
+.header-btn .btn-outline-light-soft {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+    font-size: 11px;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.header-btn .btn-white {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    font-size: 11px;
+    border-radius: 30px;
+    padding: 10px;
+    color: #000 !important;
+    font-weight: 600;
+}
+
+/* spacing between links on desktop */
+@media (min-width: 992px) {
+    .navbar.parabank .navbar-nav .nav-link {
+        padding-inline: .75rem;
+    }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .person-wrap {
+        order: -1;
+    }
+
+    .hero-title {
+        font-size: clamp(1.9rem, 7vw, 2.4rem);
+    }
+
+    .navbar {
+        background-color: var(--color-primary) !important;
+    }
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 28px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
+    h4 {
+        font-size: 22px !important;
+    }
+
+    h6 {
+        font-size: 18px !important;
+    }
+
+    .round-cut-circle::before {
+        height: 220px;
+        width: 220px;
+    }
+
+    .como-sec .innerboxes .innerbox .content-box .content,
+    .compromisso .logocol li {
+        font-size: 16px;
+    }
+
+    .como-sec .innerbox .number {
+        font-size: 150px;
+    }
+
+    .compromisso .logocol p,
+    .compromisso .contentcol p,
+    .comunidade .counterrow .counterbox p,
+    .frequentes .contentbox .textbox p {
+        font-size: 18px;
+    }
+
+    .comunidade .counterrow .counterbox .counter {
+        font-size: 35px;
+    }
+
+    .footer .copyright p,
+    .footer .main-footer p,
+    .pro-que p {
+        font-size: 18px;
+    }
+
+    .pro-que .foto-mulher-girl {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #fsw-section .fsw-right-text {
+        font-size: 18px;
+    }
+
+    .foto-banner-img {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        min-width: 250px !important;
+    }
+
+    .video-teaser {
+        bottom: -220px;
+    }
+
+    body.show-video #videoHero {
+        height: 50vh;
+    }
+
+    .navbar-brand {
+        width: 50%;
+    }
+
+    .navbar-toggler {
+        width: fit-content;
+        text-align: end;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    h2 {
+        font-size: 40px !important;
+    }
+
+    h3 {
+        font-size: 33px !important;
+    }
+
+    h4 {
+        font-size: 25px !important;
+    }
+
+    h6 {
+        font-size: 20px !important;
+    }
+
+    .como-sec .innerboxes .innerbox .content-box .content,
+    .compromisso .logocol li,
+    .compromisso .logocol p,
+    .compromisso .contentcol p {
+        font-size: 17px;
+    }
+
+    .como-sec .innerbox .number {
+        font-size: 200px;
+    }
+
+    .comunidade .counterrow .counterbox p,
+    .frequentes .contentbox .textbox p {
+        font-size: 20px;
+    }
+
+    .comunidade .counterrow .counterbox .counter {
+        font-size: 40px;
+    }
+
+    .footer .main-footer p {
+        font-size: 20px;
+    }
+
+    .pro-que .foto-mulher-girl {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .video-teaser {
+        left: 10px;
+        bottom: -100px;
+        width: 250px;
+    }
+
+    .foto-banner-img {
+        bottom: -350px;
+        left: -250px;
+        min-width: 550px !important;
+    }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1024px) {
+    h2 {
+        font-size: 50px !important;
+    }
+
+    h4 {
+        font-size: 28px !important;
+    }
+
+    .como-sec .innerboxes .innerbox .content-box .content {
+        padding-left: 20px !important;
+    }
+
+    .como-sec .innerboxes .innerbox .content-box .content,
+    .compromisso .logocol li,
+    .compromisso .logocol p,
+    .compromisso .contentcol p {
+        font-size: 18px;
+    }
+
+    .como-sec .innerbox .number {
+        font-size: 200px;
+    }
+
+    .como-sec .innerboxes {
+        margin-top: 0 !important;
+    }
+
+    .comunidade .counterrow .counterbox p,
+    .frequentes .contentbox .textbox p {
+        font-size: 22px;
+    }
+
+    .comunidade .counterrow .counterbox .counter {
+        font-size: 45px;
+    }
+
+    .frequentes {
+        margin: 0 !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .video-teaser {
+        left: 10px;
+        bottom: -100px;
+        width: 250px;
+    }
+
+    .foto-banner-img {
+        left: -300px;
+        min-width: 600px !important;
+    }
+
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1366px) {
+    h2 {
+        font-size: 55px !important;
+    }
+
+    h4 {
+        font-size: 30px !important;
+    }
+
+    .como-sec .innerboxes .innerbox .content-box .content {
+        padding: 0px 0px 0px 20px !important;
+    }
+
+    .como-sec .innerboxes .innerbox .content-box .content,
+    .compromisso .logocol li,
+    .compromisso .logocol p,
+    .compromisso .contentcol p {
+        font-size: 17px;
+    }
+
+    .como-sec .innerbox .number {
+        font-size: 200px;
+    }
+
+    .como-sec .innerboxes {
+        margin-top: 0 !important;
+    }
+
+    .comunidade .counterrow .counterbox .counter {
+        font-size: 50px;
+    }
+
+    .video-teaser {
+        left: 10px;
+        bottom: -100px;
+        width: 250px;
+    }
+
+    .foto-banner-img {
+        left: -300px;
+        min-width: 600px !important;
+    }
+}
